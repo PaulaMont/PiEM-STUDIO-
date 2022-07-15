@@ -4,71 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logo piem.PNG">
     <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="img/logo piem.PNG" type="image/x-icon">
     <title>REFERENTES</title>
 </head>
 <body>
+    <div class="grid">
     <header>
         <picture>
-            <img src="../img/logo piem.PNG" alt="logo" class="header__logo">
+            <img src="../img/logo-piem.png" alt="logo" class="header__logo">
         </picture>
 
         <nav class="header__navbar">
             <ul class="header__menu">
-                <li> <a href="../index.html"> Inicio </a></li>
-                <li> <a href="./proyectos.html"> Proyectos </a></li>
-                <li> <a href="./interiores.html"> Interiores </a></li>
-                <li> <a href="./referentes.html"> Referentes </a></li>
-                <li> <a href="../pages/contactos.html"></a> Contactos </li>
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="proyectos.html"> Proyectos </a></li>
+                <li> <a href="interiores.html"> Interiores </a></li>
+                <li> <a href="referentes.html">Referentes </a></li>
+                <li> <a href="contactos.html">Contacto</a> </li>
                
             </ul>
         </nav>
 
           <div class="header__arqanddi"> ARQUITECTURA & DISEÑO </div>
-          <div class="header__accion"> <a href="../pages/contactos.html"> REALIZA TU PROYECTO</a> </div>
+          <div class="header__accion"> <a href="../pages/contactos.html"> <button> REALIZA TU PROYECTO </button> </a> </div>
    
     </header>
 
-    <main>
+    <main class="gridreferentes">
+       <section class="container-fluid">
         <h2> NUESTROS REFERENTES </h2>
-           <div>
+           <div class="gridreferentes__nuestros">
              <p>Se trata de arquitectos, arquitectas y estudios que han sido pioneros en la arquitectura moderna y posmoderna.
                 Hoy se han convertido referentes y una fuente de inspiracion para nuestros diseños y proyectos, donde buscamos plasmar sus ideas mas innovadoras,
                 premisas de diseño, y su construccion a traves de la tecnologia de primer nivel.Sin perder de vista el usuario y sus necesidades. </p>
            </div>
-        <article>
-            <picture>
-                <img src="../img/img.jpg" alt="lina">
-            </picture>
-            <div>
+
+  <!---LINA BO BARDI -->   
+       
+       <div class="row">
+          <article class="lina">
+            <div class="col">
+              <picture class="lina__img">
+                  <img  class="img-fluid" src="../img/img.jpg" alt="lina">
+              </picture>
+            </div>
+
+            <div class="lina__texto  col" >
                 <h3> LINA BO BARDI </h3>
                 <p> Una de las arquitectas más importantes y expresivas de la arquitectura brasileña del siglo XX. 
                     Aun que nacio en Italia, fue en Brasil, viviendo en Río de Janeiro, donde Lina expandió su influencia,
                    consolidando su importancia en el escenario de la arquitectura moderna. 
                 </p>
             </div>
-        </article>
-       
-        <article>
-            <picture>
-                <img src="../img/img.jpg" alt="norman">
-            </picture>
-            <div>
+
+           </article>
+
+        </div>
+
+        <!---NORMAN FOSTER -->   
+
+        <div class="row">
+          <article class="norman">
+            <div class="col">
+            <div class="norman__texto">
                 <h3> NORMAN FOSTER </h3>
                 <p>Es el arquitecto más internacional de todos los tiempos.
                  Fiel a una manera de pensar la arquitectura, cartesiana, elegante y tecnificada, ha reinventado rascacielos, oficinas y museos.
                 </p>
             </div>
+            </div>
 
-            
-        </article>
-        
-        <article>
-            <picture>
-                <img src="../img/img.jpg" alt="p3">
+            <div class="col">
+            <picture class="norman__img">
+                <img class="img-fluid" src="../img/img.jpg" alt="norman">
             </picture>
-            <div>
+            </div>
+          </article>
+        </div>
+        <article class="frank">
+            <picture class="frank__img">
+                <img class="img-fluid" src="../img/img.jpg" alt="p3">
+            </picture>
+            <div class="frank__texto">
                 <h3> FRANK LLOYD WRIGHT </h3>
                 <p>Frank Lloyd Wright fue uno de los arquitectos estadounidenses más influyentes a nivel mundial, 
                     precursor del Movimiento Moderno, de la arquitectura orgánica y del movimiento Prairie School. 
@@ -76,11 +97,11 @@
             </div>
         </article>
        
-        <article>
-            <picture>
-                <img src="../img/img.jpg" alt="p4">
+        <article class="lyv">
+            <picture class="lyv__img">
+                <img class="img-fluid" src="../img/img.jpg" alt="p4">
             </picture>
-            <div>
+            <div class="lyv__texto">
                 <h3> LACATON Y VASSAL </h3>
                 <p>Estudio de arquitectura frances. Desarrollan una obra centrada principalmente en la relación entre la forma, la función y la economía.
                     Otorgan especial importancia al modo de vida contemporáneo, buscando crear espacios confortables para los usuarios a través de esa relación. 
@@ -89,10 +110,11 @@
             </div>
             
         </article>
+    </section> 
     </main>
 
     <footer class="footer">
-        <h3> CONTACTO </h3>
+        <h3 class="footer__contacto"> CONTACTO </h3>
      <div class="footer__c">
         <picture>
             <img src="../img/Diseño sin título 1.jpg" alt="logos" class="footer__img">
@@ -111,6 +133,8 @@
        
     </footer>
 
-    
+</div>
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

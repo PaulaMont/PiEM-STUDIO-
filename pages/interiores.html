@@ -4,59 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!---boostrap-->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logo piem.PNG">
     <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="img/logo piem.PNG" type="image/x-icon">
     <title> INTERIORES </title>
 </head>
 <body>
+   <div class="grid">
+
+   
+
     <header>
         <picture>
-            <img src="../img/logo piem.PNG" alt="logo" class="header__logo">
+            <img src="../img/logo-piem.png" alt="logo" class="header__logo">
         </picture>
 
         <nav class="header__navbar">
             <ul class="header__menu">
-                <li> <a href="../index.html"> Inicio </a></li>
-                <li> <a href="./proyectos.html"> Proyectos </a></li>
-                <li> <a href="./interiores.html"> Interiores </a></li>
-                <li> <a href="./referentes.html"> Referentes </a></li>
-                <li> <a href="../pages/contactos.html"></a> Contactos </li>
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="proyectos.html"> Proyectos </a></li>
+                <li> <a href="interiores.html"> Interiores </a></li>
+                <li> <a href="referentes.html">Referentes </a></li>
+                <li> <a href="contactos.html">Contacto</a> </li>
                
             </ul>
         </nav>
 
           <div class="header__arqanddi"> ARQUITECTURA & DISEÑO </div>
-          <div class="header__accion"> <a href="../pages/contactos.html"> REALIZA TU PROYECTO</a> </div>
+          <div class="header__accion"> <a href="../pages/contactos.html"> <button>REALIZA TU PROYECTO</button> </a> </div>
    
     </header>
 
-    <main>
-        <h2> NUESTROS PROYECTOS DE DISEÑO INTERIOR </h2>
-        <p>
-            Te invitamos a conocer nuestros proyectos en diseño interior. Ademas de diseñar y construir, ofrecemos asesoramientos 
-            en el diseño interior de cada espacio post construccion o incluso para construcciones externas a nuestro estudio.
-            Desde viviendas, edificios de oficinas, comercios, etc.
-        </p>
+    <main class="gridinterior">
+        
+            <h2> NUESTROS PROYECTOS DE DISEÑO INTERIOR </h2>
+            <p>
+              Te invitamos a conocer nuestros proyectos en diseño interior. Ademas de diseñar y construir, ofrecemos asesoramientos 
+              en el diseño interior de cada espacio post construccion o incluso para construcciones externas a nuestro estudio.
+              Desde viviendas, edificios de oficinas, comercios, etc.
+            </p>
+       
 
-        <article>
+        <article class="box__int1">
             <picture>
                 <img src="../img/img.jpg" alt="i1">
             </picture>
             <h3> PROYECTO 1 </h3>
         </article>
-        <article>
+        <article class="box__int2">
             <picture>
                 <img src="../img/img.jpg" alt="i2">
             </picture>
             <h3> PROYECTO 2 </h3>
         </article>
-        <article>
+        <article class="box__int3">
             <picture>
                 <img src="../img/img.jpg" alt="i3">
             </picture>
             <h3> PROYECTO 3 </h3>
         </article>
-        <article>
+        <article class="box__int4">
             <picture>
                 <img src="../img/img.jpg" alt="i4">
             </picture>
@@ -65,7 +74,7 @@
     </main>
 
     <footer class="footer">
-        <h3> CONTACTO </h3>
+        <h3 class="footer__contacto"> CONTACTO </h3>
      <div class="footer__c">
         <picture>
             <img src="../img/Diseño sin título 1.jpg" alt="logos" class="footer__img">
@@ -81,8 +90,9 @@
             © COPYRIGHTS 2022 PiEM STUDIO 
             Todos los derechos reservados
         </p>
-       
     </footer>
-
+ </div>
+  <!---boostrap-->  
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

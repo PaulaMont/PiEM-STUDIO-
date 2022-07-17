@@ -37,21 +37,31 @@
     </header>
     
     <main>
-        <form action="">
+        <form action="" class="row">
             <fieldset>
                 <legend> Realiza tu consulta </legend>
+
+                <div class="col">
                 <label for="nombre"> Nombre </label>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                
+                </div>
+
+                <div class="col">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
-               
+                </div>
+
+                <div class="col">
                 <label for="telefono"> Telefono </label>
                 <input type="text" name="telefono" id="telefono" placeholder=" Ingresa tu telefono" required >
-              
+                </div>
+
+                <div class="col">
                 <label for="correo"> Correo electronico</label>
                 <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" required>
-               
+                </div>
+
+                <div class="col">
                 <label for="tipo de proyecto"> Tipo de proyecto </label>
                 <select name="tipo de obra" >
                         <option value="V"> Vivienda unifamiliar</option>
@@ -61,11 +71,14 @@
                         <option value="R"> Remodelacion </option>
                         <option value="O"> Otro </option>
                 </select>
-                       
+                </div>
+
+                <div class="col">
                 <label for="comentario">Tu consulta</label>
-                
+                 </div>
+
                 <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
-      
+               
                 
                 <p> Revisaremos tu consulta y nos comunicaremos en la brevedad. Muchas gracias.</p>
                 <input type="submit">

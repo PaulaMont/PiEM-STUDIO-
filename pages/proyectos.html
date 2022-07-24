@@ -20,56 +20,121 @@
 <body>
     <div class="grid">
 
-        <header>
-            <picture>
-                <img src="../img/logo-piem.png" alt="logo" class="header__logo">
-            </picture>
-
-            <nav class="header__navbar">
-                <ul class="header__menu">
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li> <a href="proyectos.html"> Proyectos </a></li>
-                    <li> <a href="interiores.html"> Interiores </a></li>
-                    <li> <a href="referentes.html">Referentes </a></li>
-                    <li> <a href="contactos.html">Contacto</a> </li>
-
-                </ul>
-            </nav>
-
+        <header class="row">
+            
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-piem.png" alt="logo" class="logo col-md-4">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav col-md-8">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./proyectos.html">PROYECTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./interiores.html">INTERIORES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./referentes.html">REFERENTES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contactos.html">CONTACTO</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <div class="header__arqanddi"> ARQUITECTURA & DISEÑO </div>
-            <div class="header__accion"> <a href="../pages/contactos.html"> <button>REALIZA TU PROYECTO</button> </a>
+            <div class="header__accion"> <a href="../pages/contactos.html"> <button> REALIZA TU PROYECTO </button></a>
             </div>
 
         </header>
 
         <main>
-            <h2 class="proyecto__h2"> Te invitamos a conocer algunos de nuestros proyectos: </h2>
-            <div class="proyecto">
-                <article class="box__proyecto">
-                    <picture>
-                        <img src="../img/img.jpg" alt="p1">
-                    </picture>
-                    <h3> PROYECTO 1 </h3>
-                </article>
-                <article class="box__proyecto">
-                    <picture>
-                        <img src="../img/img.jpg" alt="p2">
-                    </picture>
-                    <h3> PROYECTO 2 </h3>
-                </article>
-                <article class="box__proyecto">
-                    <picture>
-                        <img src="../img/img.jpg" alt="p3">
-                    </picture>
-                    <h3> PROYECTO 3 </h3>
-                </article>
-                <article class="box__proyecto">
-                    <picture>
-                        <img src="../img/img.jpg" alt="p4">
-                    </picture>
-                    <h3> PROYECTO 4 </h3>
-                </article>
-            </div>
+            <section class="row edificios">
+                <div class="col-md-5 intimagen  d-block mx-auto col-sx-12">
+                    <div id="carouselExampleControlsNoTouching-4" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/proyecto-edificio1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/proyecto-edificio2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/proyecto-edificio3.jpg" class="d-block w-100" alt="...">
+                            </div>
+    
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching-4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching-4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-5  d-block mx-auto  interiores__estar col-sx-12">
+                    <h2>EDIFICIOS</h2>
+                    <h3> VIVIENDA COLECTIVA Y OFICINAS </h3>
+                     <p>La vivienda colectiva en altura es la manera de habitar mas demandada en los ultimos años en las grandes ciudades,
+                        tanto por los habitantes como por los inversionistas.
+                        Mucho de los edificios nuevos poseen una mixtura de usos, compartiendo las actividades de oficina y de vivienda. 
+                     </p> 
+                </div>
+            </section>
+
+
+            <section class="row vivienda">
+
+                <div class="col-md-5  d-block mx-auto  interiores__estar col-sx-12">
+                    <h2>VIVIENDA</h2>
+                    <h3> UNIFAMILIAR </h3>
+                     <p>La vivienda unifamiliar es la tipologia historicamente mas utilizada por las familias
+                        aunque hoy en dia es menos accesible por los altos costos.  
+                     </p> 
+                </div>
+
+                <div class="col-md-5 intimagen  d-block mx-auto col-sx-12">
+                    <div id="carouselExampleControlsNoTouching-5" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/proyecto-vivienda1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/proyecto-vivienda2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/proyecto-vivienda3.jpg" class="d-block w-100" alt="...">
+                            </div>
+    
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching-5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching-5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+               
+            </section>
         </main>
 
         <footer class="footer">

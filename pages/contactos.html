@@ -19,22 +19,38 @@
     <div class="grid">
 
 
-        <header>
-            <picture>
-                <img src="../img/logo-piem.png" alt="logo" class="header__logo">
-            </picture>
-
-            <nav class="header__navbar">
-                <ul class="header__menu">
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li> <a href="proyectos.html"> Proyectos </a></li>
-                    <li> <a href="interiores.html"> Interiores </a></li>
-                    <li> <a href="referentes.html">Referentes </a></li>
-                    <li> <a href="contactos.html">Contacto</a> </li>
-
-                </ul>
-            </nav>
-
+        <header class="row">
+            
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-piem.png" alt="logo" class="logo col-md-4">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav col-md-8">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./proyectos.html">PROYECTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./interiores.html">INTERIORES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./referentes.html">REFERENTES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contactos.html">CONTACTO</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <div class="header__arqanddi"> ARQUITECTURA & DISEÑO </div>
             <div class="header__accion"> <a href="../pages/contactos.html"> <button> REALIZA TU PROYECTO </button></a>
             </div>
@@ -42,6 +58,8 @@
         </header>
 
         <main class="contactos">
+            <h1>CONTACTATE</h1>
+            <h2> Cuentanos tu idea y nos comunicaremos contigo</h2>
             <form class="row g-3">
                 <div class="col-md-4">
                     <label for="inputEmail4" class="form-label">Nombre</label>

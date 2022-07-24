@@ -51,42 +51,28 @@ ul {
 }
 
 /* HEADER */
-.header {
-  flex: 1 1 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.logo{
+  width: 150px;
+  padding: 2rem;
+ 
 }
 
-.header__logo {
-  padding: 2rem;
-  justify-content: space-around;
-  width: 15rem;
-  height: 15rem;
-}
 
 /* ----nav ---- */
-.header__navbar {
-  display: flex;
+
+
+
+.navbar-nav{
+  padding:5rem;
+  gap: 10rem;
   font-size: 2em;
-  list-style-type: none;
-  text-align: center;
-  display: inline-block;
-  padding: 4rem;
-  padding-left: 35rem;
-  text-decoration: none;
+ text-align: center;
+ 
+  
 }
 
-.header__menu {
-  display: flex;
-  gap: 8rem;
-  list-style-type: none;
-  justify-content: space-around;
-  align-items: flex-start;
-  border-bottom: 2px solid;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+
 
 .header__arqanddi {
   text-align: center;
@@ -164,6 +150,7 @@ ul {
 
 .espe img:hover {
   transform: scale(1.5);
+  transition: 1s ease;
 }
 
 .espe h3 {
@@ -238,32 +225,17 @@ ul {
   padding: 2rem;
 }
 
-.box__proyecto {
-  flex: 1 1 clamp(300px, 30%, 400px);
+.edificios{
+  padding: 5rem;
 }
 
-.proyecto img {
-  width: 25rem;
-  height: 25rem;
-  border: solid 1px;
-  padding: 0.5rem;
+.vivienda{
+  padding: 5rem;
 }
-
-.proyecto img:hover {
-  transform: scale(1.5);
-  animation-delay: 2s;
-}
-
-.proyecto h3 {
-  font-size: 2em;
-  text-align: center;
-  padding: 1rem;
-}
-
 /* ----- INTERIORES ------ */
 
 
-.gridinterior h2 {
+.gridinterior h1 {
   grid-area: titulo;
   font-size: 3.2em;
   padding: 3rem;
@@ -290,13 +262,23 @@ ul {
   align-items: center;
   margin-top: 12rem;
 }
-.interiores__estar h3{
+.interiores__estar h2{
   font-size: 3em;
 }
 .interiores__estar p{
   font-size: 1.8em;
   text-justify: auto;
 
+}
+
+.estar{
+  padding:5rem;
+}
+.cocina{
+  padding: 5rem;
+}
+.dormitorio{
+  padding: 5rem;
 }
 /* ----- REFERENTES ------ */
 .img-fluid {
@@ -318,7 +300,7 @@ ul {
   text-align: center;
 }
 
-.lina__texto h4 {
+.lina__texto h2 {
   font-size: 2em;
   text-align: center;
 }
@@ -340,7 +322,7 @@ ul {
   padding: 7rem;
 }
 
-.norman__texto h4 {
+.norman__texto h2 {
   font-size: 2em;
   text-align: center;
 }
@@ -357,12 +339,12 @@ ul {
 }
 
 /* ---- FRANK LW ---- */
-.frank__texto h3 {
+.frank__titulo {
   font-size: 3.2em;
   text-align: center;
 }
 
-.frank__texto h4 {
+.frank__texto h2 {
   font-size: 2em;
   text-align: center;
 }
@@ -384,12 +366,12 @@ ul {
   padding: 7rem;
 }
 
-.lyv__texto h3 {
+.lyv__titulo {
   font-size: 3.2em;
   text-align: center;
 }
 
-.lyv__texto h4 {
+.lyv__texto h2 {
   font-size: 2em;
   text-align: center;
 }
@@ -421,6 +403,10 @@ ul {
     font-size: 0.45em;
     border-bottom: none;
   }
+ .navbar-nav {
+  padding: 0;
+  gap: 0;
+ }
 
   /*--TITULOS--*/
   .contenido__titulo {

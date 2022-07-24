@@ -20,25 +20,42 @@
 <body>
     <div class="grid">
 
-        <header>
-
-            <picture>
-                <img src="./img/logo-piem.png" alt="logo" class="header__logo">
-            </picture>
-
-            <nav class="header__navbar">
-                <ul class="header__menu">
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="pages/proyectos.html"> Proyectos </a></li>
-                    <li> <a href="pages/interiores.html"> Interiores </a></li>
-                    <li> <a href="pages/referentes.html">Referentes </a></li>
-                    <li> <a href="pages/contactos.html">Contacto</a> </li>
-                </ul>
-            </nav>
-
+        <header class="row">
+            
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./img/logo-piem.png" alt="logo" class="logo col-md-4">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav col-md-8">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/proyectos.html">PROYECTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/interiores.html">INTERIORES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/referentes.html">REFERENTES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/contactos.html">CONTACTO</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <div class="header__arqanddi"> ARQUITECTURA & DISEÑO </div>
-            <div class="header__accion"> <a href="pages/contactos.html"> <button> REALIZA TU PROYECTO </button> </a>
+            <div class="header__accion"> <a href="./pages/contactos.html"> <button> REALIZA TU PROYECTO </button></a>
             </div>
+
         </header>
 
 

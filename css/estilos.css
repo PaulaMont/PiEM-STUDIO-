@@ -1,30 +1,23 @@
 /* ----- font ------ */
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Barlow:wght@100&family=Inter:wght@100;200;300&family=Roboto:wght@300&display=swap");
-
+/* ---- VARIABLES FONTSIZE ----- */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-  font-family: 'Assistant', sans-serif;
-
-}
+  font-family: 'Assistant', sans-serif; }
 
 /* grid */
 .grid {
   display: grid;
-  grid-template-areas: "header"
-    "main"
-    "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 1fr;
-  gap: 5px;
-}
+  gap: 5px; }
 
 header {
   background-image: url(../img/transparencia.png);
@@ -32,367 +25,252 @@ header {
   background-size: cover;
   width: 100%;
   height: 70rem;
-  grid-area: header;
-}
+  grid-area: header; }
 
 main {
   background-color: white;
-  grid-area: main;
-}
+  grid-area: main; }
 
 footer {
   background-color: #f2f2f2;
-  grid-area: footer;
-}
+  grid-area: footer; }
 
 /* flexbox*/
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 /* HEADER */
-
-.logo{
+.logo {
   width: 150px;
-  padding: 2rem;
- 
-}
-
+  padding: 2rem; }
 
 /* ----nav ---- */
-
-
-
-.navbar-nav{
-  padding:5rem;
+.navbar-nav {
+  padding: 5rem;
   gap: 10rem;
   font-size: 2em;
- text-align: center;
- 
-  
-}
-
-
+  text-align: center; }
 
 .header__arqanddi {
   text-align: center;
   line-height: 30rem;
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 .header__accion {
   text-align: center;
   display: block;
   text-decoration: none;
   font-size: 2em;
-  background: none;
-}
+  background: none; }
 
 .header__accion button {
   flex-direction: row;
   align-items: center;
   margin-top: 30px;
-  background: none;
-}
+  background: none; }
 
 /* ----contenido----- */
-.contenido__nosotros {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .contenido__titulo {
   color: black;
   font-size: 3.2em;
   padding: 2rem;
-  border-bottom: 2px solid;
-}
+  border-bottom: 2px solid; }
+
+.contenido__nosotros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .contenido__nosotros img {
+    flex: 1 1 40%;
+    width: 60rem;
+    height: 45rem;
+    padding: 2rem; }
 
 .contenido__texto {
   flex: 1 1 60%;
   font-size: 2.5em;
   text-align: center;
-  padding: 10rem;
-}
-
-.contenido img {
-  flex: 1 1 40%;
-  width: 60rem;
-  height: 45rem;
-  padding: 2rem;
-}
+  padding: 10rem; }
 
 /* ----- especialidades------ */
 .espe {
   display: flex;
   gap: 1rem;
   text-align: center;
-  padding: 2rem;
-}
-
-.espe__titulo {
-  font-size: 3.2em;
-  padding: 2rem;
-  border-bottom: 2px solid;
-}
-
-.box {
-  flex: 1 1 clamp(300px, 30%, 400px);
-}
-
-.espe img {
-  width: 25rem;
-  height: 25rem;
-  border: solid 1px;
-  padding: 0.5rem;
-}
-
-.espe img:hover {
-  transform: scale(1.5);
-  transition: 1s ease;
-}
-
-.espe h3 {
-  font-size: 2em;
-  text-align: center;
-  padding: 1rem;
-}
+  padding: 2rem; }
+  .espe .box {
+    flex: 1 1 clamp(300px, 30%, 400px); }
+    .espe .box img {
+      width: 25rem;
+      height: 25rem;
+      border: solid 1px;
+      padding: 0.5rem; }
+    .espe .box img:hover {
+      transform: scale(1.5);
+      transition: 1s ease; }
+  .espe__titulo {
+    font-size: 3.2em;
+    padding: 2rem;
+    border-bottom: 2px solid; }
+  .espe h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 1rem; }
 
 /* ----- ubicacion ------ */
 .ubi {
-  background: none;
-}
+  background: none; }
+  .ubi h3 {
+    font-size: 2em;
+    padding: 1rem; }
 
 .ubicacion__titulo {
   font-size: 3.2em;
   padding: 2rem;
-  border-bottom: 2px solid;
-}
-
-.ubi h3 {
-  font-size: 1.8em;
-  padding: 1rem;
-}
-
-.ubicacion__sub {
-  font-size: 1.8em;
-}
+  border-bottom: 2px solid; }
 
 /* ----- footer ------ */
-.footer__c {
-  display: flex;
-  padding: 2rem;
-  font-size: 2em;
-  text-decoration: none;
-  padding: 1rem;
-  flex-direction: column;
-}
-
-.footer h3 {
-  font-size: 3.2em;
-  padding: 2rem;
-  border-bottom: 2px solid;
-}
-
-
-.footer__contenido {
-  font-size: 4em;
-  line-height: 4.7rem;
-  padding: 1rem;
-}
-
-.footer p {
-  font-size: 1.2rem;
-  text-align: right;
-}
-
-.footer__contacto {
-  font-family: 'Barlow', sans-serif;
-}
+.footer {
+  padding: 0.5rem; }
+  .footer__c {
+    display: flex;
+    padding: 2rem;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 1rem;
+    flex-direction: column; }
+  .footer h3 {
+    font-size: 3.2em;
+    padding: 2rem;
+    border-bottom: 2px solid; }
+  .footer p {
+    font-size: 1.2rem;
+    text-align: right; }
 
 /* ----- PROYECTOS ------ */
-.proyecto__h2 {
+.proyecto__h1 {
+  grid-area: titulo;
   font-size: 3.2em;
-  padding: 2rem;
-  font-family: 'Assistant', sans-serif;
-}
+  padding: 3rem;
+  text-align: center; }
 
-.proyecto {
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  padding: 2rem;
-}
+.edificios {
+  padding: 5rem; }
 
-.edificios{
-  padding: 5rem;
-}
+.vivienda {
+  padding: 5rem; }
 
-.vivienda{
-  padding: 5rem;
-}
 /* ----- INTERIORES ------ */
-
-
 .gridinterior h1 {
   grid-area: titulo;
   font-size: 3.2em;
   padding: 3rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .gridinterior p {
   grid-area: texto;
-  font-size: 2.2em;
+  font-size: 2em;
   padding: 2rem;
-  text-align: center;
-}
-
+  text-align: center; }
 
 .intimagen {
   max-width: 50%;
   border: solid 1px;
   padding: 0.5rem;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
-.interiores__estar{
+.interiores__estar {
   text-align: center;
   align-items: center;
-  margin-top: 12rem;
-}
-.interiores__estar h2{
-  font-size: 3em;
-}
-.interiores__estar p{
-  font-size: 1.8em;
-  text-justify: auto;
+  margin-top: 12rem; }
+  .interiores__estar h2 {
+    font-size: 3em; }
+  .interiores__estar p {
+    font-size: 2em;
+    text-justify: auto;
+    padding: 3rem; }
+  .interiores__estar.estar {
+    padding: 5rem; }
+  .interiores__estar.cocina {
+    padding: 5rem; }
+  .interiores__estar.dormitorio {
+    padding: 5rem; }
 
-}
-
-.estar{
-  padding:5rem;
-}
-.cocina{
-  padding: 5rem;
-}
-.dormitorio{
-  padding: 5rem;
-}
 /* ----- REFERENTES ------ */
 .img-fluid {
   width: 35rem;
   height: 35rem;
   padding: 5rem;
   display: block;
-  margin: auto;
-}
+  margin: auto; }
 
 /* ---- LINA BO BARDI ---- */
 .lina__texto {
   text-align: left;
-  padding: 7rem;
-}
-
-.lina__titulo {
-  font-size: 3.2em;
-  text-align: center;
-}
-
-.lina__texto h2 {
-  font-size: 2em;
-  text-align: center;
-}
-
-.lina__texto p {
-  font-size: 1.8em;
-  text-align: center;
-  padding: 2rem;
-}
+  padding: 7rem; }
+  .lina__texto h1 {
+    font-size: 3.2em;
+    text-align: center; }
+  .lina__texto h2 {
+    font-size: 2em;
+    text-align: center; }
+  .lina__texto p {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 2rem; }
 
 /* ---- NORMAN FOSTER ---- */
-.norman__titulo {
-  font-size: 3.2em;
-  text-align: center;
-}
-
 .norman__texto {
   text-align: left;
-  padding: 7rem;
-}
-
-.norman__texto h2 {
-  font-size: 2em;
-  text-align: center;
-}
-
-.norman__texto p {
-  font-size: 1.8em;
-  text-align: center;
-  padding: 2rem;
-}
-
-.norman img {
-  width: 35rem;
-  height: 35rem;
-}
+  padding: 7rem; }
+  .norman__texto h1 {
+    font-size: 3.2em;
+    text-align: center; }
+  .norman__texto h2 {
+    font-size: 2em;
+    text-align: center; }
+  .norman__texto p {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 2rem; }
 
 /* ---- FRANK LW ---- */
-.frank__titulo {
-  font-size: 3.2em;
-  text-align: center;
-}
-
-.frank__texto h2 {
-  font-size: 2em;
-  text-align: center;
-}
-
-.frank__texto p {
-  font-size: 1.8em;
-  text-align: center;
-  padding: 2rem;
-}
-
 .frank__texto {
   text-align: left;
-  padding: 7rem;
-}
+  padding: 7rem; }
+  .frank__texto h1 {
+    font-size: 3.2em;
+    text-align: center; }
+  .frank__texto h2 {
+    font-size: 2em;
+    text-align: center; }
+  .frank__texto p {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 2rem; }
 
 /* ---- LACATON Y VASSAL ---- */
 .lyv__texto {
   text-align: left;
-  padding: 7rem;
-}
-
-.lyv__titulo {
-  font-size: 3.2em;
-  text-align: center;
-}
-
-.lyv__texto h2 {
-  font-size: 2em;
-  text-align: center;
-}
-
-.lyv__texto p {
-  font-size: 1.8em;
-  text-align: center;
-  padding: 2rem;
-}
+  padding: 7rem; }
+  .lyv__texto h1 {
+    font-size: 3.2em;
+    text-align: center; }
+  .lyv__texto h2 {
+    font-size: 2em;
+    text-align: center; }
+  .lyv__texto p {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 2rem; }
 
 /* ------ FORMULARIO ------ */
-
 .contactos {
-  font-size: 1.8em;
-  ;
-}
+  font-size: 1.8em; }
 
 /* ------ RESPONSIVE ------ */
 /* --- mobile --- */
 @media only screen and (max-width: 480px) {
-
   /*--menu de navegacion--*/
   .header__menu {
     flex-direction: column;
@@ -401,80 +279,50 @@ ul {
     gap: 0.5em;
     text-align: center;
     font-size: 0.45em;
-    border-bottom: none;
-  }
- .navbar-nav {
-  padding: 0;
-  gap: 0;
- }
-
+    border-bottom: none; }
+  .navbar-nav {
+    padding: 0;
+    gap: 0; }
   /*--TITULOS--*/
   .contenido__titulo {
-    text-align: center;
-  }
-
+    text-align: center; }
   .espe__titulo {
-    text-align: center;
-  }
-
+    text-align: center; }
   .ubicacion__titulo {
-    text-align: center;
-  }
-
+    text-align: center; }
   .footer h3 {
-    text-align: center;
-  }
-
+    text-align: center; }
   /*--NOSOTROS--*/
   .contenido__nosotros {
     text-align: center;
-    flex-direction: column;
-  }
-
-  .contenido__nosotros img {
-    width: 40rem;
-    height: 25rem;
-    padding: 1rem;
-  }
-
-  .contenido__texto {
-    padding: 1rem;
-    align-items: center;
-    text-align: center;
-  }
-
+    flex-direction: column; }
+    .contenido__nosotros img {
+      width: 40rem;
+      height: 25rem;
+      padding: 1rem; }
+    .contenido__nosotros__texto {
+      padding: 1rem;
+      align-items: center;
+      text-align: center; }
   .box {
     display: flex;
     flex-direction: column;
     width: 25rem;
     height: 25rem;
     border: solid 1px;
-    padding: 0.5rem;
-  }
-
+    padding: 0.5rem; }
   /*---UBICACION---*/
   iframe {
     width: 40rem;
     height: 25rem;
-    padding: 1rem;
-  }
-
+    padding: 1rem; }
   .ubi h3 {
-    font-size: 10em;
-  }
-
+    font-size: 10em; }
   .espe {
     flex-direction: column;
-    align-items: center;
-  }
-
+    align-items: center; }
   .proyecto {
     flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-
+    align-items: center; } }
 
 /* --- desktop --- */

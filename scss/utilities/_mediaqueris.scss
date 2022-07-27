@@ -1,0 +1,93 @@
+/* --- mobile --- */
+@media only screen and (max-width: 480px) {
+
+    /*--menu de navegacion--*/
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.2rem;
+        gap: 0.5em;
+        text-align: center;
+        font-size: 0.45em;
+        border-bottom: none;
+    }
+
+    .navbar-nav {
+        padding: 0;
+        gap: 0;
+    }
+
+    /*--TITULOS--*/
+    .contenido__titulo {
+        text-align: center;
+    }
+
+    .espe__titulo {
+        text-align: center;
+    }
+
+    .ubicacion__titulo {
+        text-align: center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    /*--NOSOTROS--*/
+    .contenido {
+        text-align: center;
+        flex-direction: column;
+
+        & img {
+            width: 40rem;
+            height: 25rem;
+            padding: 1rem;
+        }
+
+        &__texto {
+            padding: 1rem;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 25rem;
+        border: solid 1px;
+        padding: 0.5rem;
+    }
+
+    /*---UBICACION---*/
+    iframe {
+        width: 40rem;
+        height: 25rem;
+        padding: 1rem;
+    }
+
+    .ubi {
+        & h3 {
+          font-size: 1.5em;  
+        }
+        
+    }
+
+    .espe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+}
+
+
+/* --- desktop --- */

@@ -1,0 +1,98 @@
+.img-fluid {
+    width: 35rem;
+    height: 35rem;
+    padding: 5rem;
+    display: block;
+    margin: auto;
+}
+
+/* ---- LINA BO BARDI ---- */
+.lina__texto {
+    text-align: left;
+    padding: 7rem;
+
+    & h1 {
+        font-size: $font_size-32;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: $font_size-2;
+        text-align: center;
+    }
+
+    & p {
+        font-size: $font_size-18;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+
+/* ---- NORMAN FOSTER ---- */
+.norman__texto {
+    text-align: left;
+    padding: 7rem;
+
+    & h1 {
+        font-size: $font_size-32;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: $font_size-2;
+        text-align: center;
+    }
+
+    & p {
+        font-size: $font_size-18;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+
+/* ---- FRANK LW ---- */
+
+.frank__texto {
+    text-align: left;
+    padding: 7rem;
+
+    & h1 {
+        font-size: $font_size-32;
+        text-align: center
+    }
+
+    & h2 {
+        font-size: $font_size-2;
+        text-align: center;
+    }
+
+    & p {
+        font-size: $font_size-18;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+/* ---- LACATON Y VASSAL ---- */
+.lyv__texto {
+    text-align: left;
+    padding: 7rem;
+
+    & h1 {
+        font-size: $font_size-32;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: $font_size-2;
+        text-align: center;
+    }
+
+    & p {
+        font-size: $font_size-18;
+        text-align: center;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,50 @@
+.gridinterior {
+    & h1 {
+        grid-area: titulo;
+        font-size: $font_size-32;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    & p {
+        grid-area: texto;
+        font-size: $font_size-2;
+        padding: 2rem;
+        text-align: center;
+    }
+
+}
+
+.intimagen {
+    border: solid 1px;
+    padding: 0.5rem;
+    background-color: transparent;
+}
+
+.interiores__estar {
+    text-align: center;
+    align-items: center;
+    margin-top: 12rem;
+
+    & h2 {
+        font-size: $font_size-3;
+    }
+
+    & p {
+        font-size: $font_size-2;
+        text-justify: auto;
+        padding: 3rem;
+    }
+
+    &.estar {
+        padding: 5rem;
+    }
+
+    &.cocina {
+        padding: 5rem;
+    }
+
+    &.dormitorio {
+        padding: 5rem;
+    }
+}

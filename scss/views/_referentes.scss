@@ -8,46 +8,36 @@
 
 /* ---- LINA BO BARDI ---- */
 .lina__texto {
-    text-align: left;
-    padding: 7rem;
+   @include textos(none, left, 7rem);
 
     & h1 {
-        font-size: $font_size-32;
-        text-align: center;
+       @include textos($font_size-32,center, none)
     }
 
     & h2 {
-        font-size: $font_size-2;
-        text-align: center;
+      @include textos ($font_size-2,center, none)
     }
 
     & p {
-        font-size: $font_size-18;
-        text-align: center;
-        padding: 2rem;
+        @include textos ($font_size-18,center, 2rem)
     }
 }
 
 
 /* ---- NORMAN FOSTER ---- */
 .norman__texto {
-    text-align: left;
-    padding: 7rem;
+    @include textos(none, left, 7rem);
 
     & h1 {
-        font-size: $font_size-32;
-        text-align: center;
+        @include textos($font_size-32,center, none)
     }
 
     & h2 {
-        font-size: $font_size-2;
-        text-align: center;
+        @include textos ($font_size-2,center, none)
     }
 
     & p {
-        font-size: $font_size-18;
-        text-align: center;
-        padding: 2rem;
+        @include textos ($font_size-18,center, 2rem)
     }
 }
 
@@ -55,44 +45,34 @@
 /* ---- FRANK LW ---- */
 
 .frank__texto {
-    text-align: left;
-    padding: 7rem;
+    @include textos(none, left, 7rem);
 
     & h1 {
-        font-size: $font_size-32;
-        text-align: center
+        @include textos($font_size-32,center, none)
     }
 
     & h2 {
-        font-size: $font_size-2;
-        text-align: center;
+        @include textos ($font_size-2,center, none)
     }
 
     & p {
-        font-size: $font_size-18;
-        text-align: center;
-        padding: 2rem;
+        @include textos ($font_size-18,center, 2rem)
     }
 }
 
 /* ---- LACATON Y VASSAL ---- */
 .lyv__texto {
-    text-align: left;
-    padding: 7rem;
+    @include textos(none, left, 7rem);
 
     & h1 {
-        font-size: $font_size-32;
-        text-align: center;
+        @include textos($font_size-32,center, none)
     }
 
     & h2 {
-        font-size: $font_size-2;
-        text-align: center;
+        @include textos ($font_size-2,center, none)
     }
 
     & p {
-        font-size: $font_size-18;
-        text-align: center;
-        padding: 2rem;
+        @include textos ($font_size-18,center, 2rem)
     }
 }

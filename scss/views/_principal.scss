@@ -1,8 +1,7 @@
 .contenido {
     &__titulo {
         color: black;
-        font-size: $font_size-32;
-        padding: 2rem;
+        @include textos($font_size-32,none,2rem);
         border-bottom: 2px solid;
     }
 
@@ -21,9 +20,8 @@
 
     &__texto {
         flex: 1 1 60%;
-        font-size: 2.5em;
-        text-align: center;
-        padding: 10rem;
+        color: black;
+        @include textos(2.5em, center,10rem);
     }
 }
 
@@ -31,8 +29,7 @@
 .espe {
     display: flex;
     gap: 1rem;
-    text-align: center;
-    padding: 2rem;
+    @include textos (none, center, 2rem);
 
     & .box {
         flex: 1 1 clamp(300px, 30%, 400px);
@@ -51,15 +48,12 @@
     }
 
     &__titulo {
-        font-size: $font_size-32;
-        padding: 2rem;
+        @include textos($font_size-32,none,2rem);
         border-bottom: 2px solid;
     }
 
     & h3 {
-        font-size: $font_size-2;
-        text-align: center;
-        padding: 1rem;
+        @include textos($font_size-2,center,1rem);
     }
 
 }
@@ -68,14 +62,12 @@
     background: none;
 
     & h3 {
-        font-size: $font_size-2;
-        padding: 1rem;
+        @include textos($font_size-2,none,1rem);
     }
 
 }
 
 .ubicacion__titulo {
-    font-size: $font_size-32;
-    padding: 2rem;
+    @include textos($font_size-32,none,2rem);
     border-bottom: 2px solid;
 }

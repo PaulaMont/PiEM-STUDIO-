@@ -89,5 +89,368 @@
  
 }
 
+@media only screen and (min-width: 560px) and (max-width: 770px) {
 
-/* --- desktop --- */
+
+    .navbar-nav {
+        padding: 0;
+        gap: 0;
+    }
+
+    /*--TITULOS--*/
+    .contenido__titulo {
+        text-align: center;
+    }
+
+    .espe__titulo {
+        text-align: center;
+    }
+
+    .ubicacion__titulo {
+        text-align: center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    /*--NOSOTROS--*/
+    .contenido {
+        text-align: center;
+        flex-direction: column;
+
+        & img {
+            width: 40rem;
+            height: 25rem;
+            padding: 1rem;
+        }
+
+        &__texto {
+            padding: 1rem;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 25rem;
+        border: solid 1px;
+        padding: 0.5rem;
+    }
+
+    /*---UBICACION---*/
+    iframe {
+        width: 40rem;
+        height: 25rem;
+        padding: 1rem;
+    }
+
+    .ubi {
+        & h3 {
+          font-size: 1.5em;  
+        }
+        
+    }
+
+    .espe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*---PROYECTOS/INTERIORES---*/
+   .proyecto__h1 {
+    grid-area: titulo;
+    @include textos($font_size-18, center, 1rem)
+    }
+
+
+   .edificios {
+    padding: 1rem;
+    }
+
+   .vivienda {
+    padding: 1rem;
+    }
+
+    .interiores__estar {
+        text-align: center;
+        align-items: center;
+        margin-top: 5rem;
+    
+        & h2 {
+            font-size: 2em;
+        }
+        & h3 {
+            font-size: 1.5em;
+        }
+    
+        & p {
+            font-size: 1.5em;
+            text-justify: auto;
+            padding: 1rem;
+        }
+    }   
+    
+    /*----REFERENTES----*/
+    .lina__texto{
+        @include textos(none, left,2rem);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    .norman__texto{
+        @include textos(none, left,2rem);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    .frank__texto{
+        @include textos(none, left,2rem);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+  
+    .lyv__texto{
+        @include textos(none, left,2rem);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    
+    .img-fluid {
+       padding: 0.5rem;
+       
+    }
+    .norman {
+        flex-direction: column;
+    }
+
+ 
+}
+
+
+/* --- tablet --- */
+@media only screen and (min-width: 780px)and (max-width: 992px) {
+
+    /*--menu de navegacion--*/
+    
+
+    .navbar-nav {
+        padding: 0;
+        gap: 0;
+    }
+
+    /*--TITULOS--*/
+    .contenido__titulo {
+        text-align: center;
+    }
+
+    .espe__titulo {
+        text-align: center;
+    }
+
+    .ubicacion__titulo {
+        text-align: center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    /*--NOSOTROS--*/
+    .contenido {
+        text-align: center;
+        flex-direction: column;
+
+        & img {
+            width: 40rem;
+            height: 25rem;
+            padding: 1rem;
+        }
+
+        &__texto {
+            align-items: center;
+            @include textos (1.5em,center,1rem)
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 25rem;
+        border: solid 1px;
+        padding: 0.5rem;
+    }
+
+    /*---UBICACION---*/
+    iframe {
+        width: 40rem;
+        height: 25rem;
+        padding: 1rem;
+    }
+
+    .ubi {
+        & h3 {
+          font-size: 1.5em;  
+        }
+        
+    }
+
+    .espe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   /*---PROYECTOS/INTERIORES---*/
+   .proyecto__h1 {
+    grid-area: titulo;
+    @include textos($font_size-18, center, 1rem)
+    }
+
+
+   .edificios {
+    padding: 1rem;
+    }
+
+   .vivienda {
+    padding: 1rem;
+    }
+
+    .interiores__estar {
+        text-align: center;
+        align-items: center;
+        margin-top: 5rem;
+    
+        & h2 {
+            font-size: 2em;
+        }
+        & h3 {
+            font-size: 1.5em;
+        }
+    
+        & p {
+            font-size: 1.5em;
+            text-justify: auto;
+            padding: 1rem;
+        }
+    }   
+    
+    /*----REFERENTES----*/
+    .lina__texto{
+        @include textos(none, left,none);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    .norman__texto{
+        @include textos(none, left,none);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    .frank__texto{
+        @include textos(none, left,none);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+  
+    .lyv__texto{
+        @include textos(none, left,none);
+    
+        & h1 {
+            @include textos(2em,center, none)
+        }
+    
+        & h2 {
+            @include textos (1.5em,center, none)
+        }
+    
+        & p {
+            @include textos (1.5em,center, none)
+        }
+    }
+    
+    .img-fluid {
+       padding: 1rem;
+       
+    }
+}

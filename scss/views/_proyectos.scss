@@ -1,8 +1,6 @@
 .proyecto__h1 {
     grid-area: titulo;
-    font-size: $font_size-32;
-    padding: 3rem;
-    text-align: center;
+    @include textos($font_size-32, center, 3rem)
 }
 
 .edificios {

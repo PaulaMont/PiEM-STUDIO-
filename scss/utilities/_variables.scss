@@ -4,3 +4,11 @@ $font_size-2:2em;
 $font_size-3: 3em;
 $font_size-5: 5em;
 $font_size-18: 1.8em;
+
+/* -----MIXIN----- */ 
+@mixin textos($font-size, $text-aling, $padding) {
+    font-size: $font-size;
+    text-align: $text-aling;
+    padding: $padding;
+    
+}

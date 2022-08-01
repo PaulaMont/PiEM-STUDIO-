@@ -1,6 +1,7 @@
 /* ----- font ------ */
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Barlow:wght@100&family=Inter:wght@100;200;300&family=Roboto:wght@300&display=swap");
 /* ---- VARIABLES FONTSIZE ----- */
+/* -----MIXIN----- */
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +75,7 @@ ul {
 .contenido__titulo {
   color: black;
   font-size: 3.2em;
+  text-align: none;
   padding: 2rem;
   border-bottom: 2px solid; }
 
@@ -89,6 +91,7 @@ ul {
 
 .contenido__texto {
   flex: 1 1 60%;
+  color: black;
   font-size: 2.5em;
   text-align: center;
   padding: 10rem; }
@@ -97,6 +100,7 @@ ul {
 .espe {
   display: flex;
   gap: 1rem;
+  font-size: none;
   text-align: center;
   padding: 2rem; }
   .espe .box {
@@ -111,6 +115,7 @@ ul {
       transition: 1s ease; }
   .espe__titulo {
     font-size: 3.2em;
+    text-align: none;
     padding: 2rem;
     border-bottom: 2px solid; }
   .espe h3 {
@@ -122,10 +127,12 @@ ul {
   background: none; }
   .ubi h3 {
     font-size: 2em;
+    text-align: none;
     padding: 1rem; }
 
 .ubicacion__titulo {
   font-size: 3.2em;
+  text-align: none;
   padding: 2rem;
   border-bottom: 2px solid; }
 
@@ -152,8 +159,8 @@ ul {
 .proyecto__h1 {
   grid-area: titulo;
   font-size: 3.2em;
-  padding: 3rem;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem; }
 
 .edificios {
   padding: 5rem; }
@@ -165,14 +172,14 @@ ul {
 .gridinterior h1 {
   grid-area: titulo;
   font-size: 3.2em;
-  padding: 3rem;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem; }
 
 .gridinterior p {
   grid-area: texto;
   font-size: 2em;
-  padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem; }
 
 .intimagen {
   border: solid 1px;
@@ -206,14 +213,17 @@ ul {
 
 /* ---- LINA BO BARDI ---- */
 .lina__texto {
+  font-size: none;
   text-align: left;
   padding: 7rem; }
   .lina__texto h1 {
     font-size: 3.2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .lina__texto h2 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .lina__texto p {
     font-size: 1.8em;
     text-align: center;
@@ -221,14 +231,17 @@ ul {
 
 /* ---- NORMAN FOSTER ---- */
 .norman__texto {
+  font-size: none;
   text-align: left;
   padding: 7rem; }
   .norman__texto h1 {
     font-size: 3.2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .norman__texto h2 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .norman__texto p {
     font-size: 1.8em;
     text-align: center;
@@ -236,14 +249,17 @@ ul {
 
 /* ---- FRANK LW ---- */
 .frank__texto {
+  font-size: none;
   text-align: left;
   padding: 7rem; }
   .frank__texto h1 {
     font-size: 3.2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .frank__texto h2 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .frank__texto p {
     font-size: 1.8em;
     text-align: center;
@@ -251,14 +267,17 @@ ul {
 
 /* ---- LACATON Y VASSAL ---- */
 .lyv__texto {
+  font-size: none;
   text-align: left;
   padding: 7rem; }
   .lyv__texto h1 {
     font-size: 3.2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .lyv__texto h2 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    padding: none; }
   .lyv__texto p {
     font-size: 1.8em;
     text-align: center;
@@ -326,4 +345,278 @@ ul {
     flex-direction: column;
     align-items: center; } }
 
-/* --- desktop --- */
+@media only screen and (min-width: 560px) and (max-width: 770px) {
+  .navbar-nav {
+    padding: 0;
+    gap: 0; }
+  /*--TITULOS--*/
+  .contenido__titulo {
+    text-align: center; }
+  .espe__titulo {
+    text-align: center; }
+  .ubicacion__titulo {
+    text-align: center; }
+  .footer h3 {
+    text-align: center; }
+  /*--NOSOTROS--*/
+  .contenido {
+    text-align: center;
+    flex-direction: column; }
+    .contenido img {
+      width: 40rem;
+      height: 25rem;
+      padding: 1rem; }
+    .contenido__texto {
+      padding: 1rem;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5em; }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 25rem;
+    border: solid 1px;
+    padding: 0.5rem; }
+  /*---UBICACION---*/
+  iframe {
+    width: 40rem;
+    height: 25rem;
+    padding: 1rem; }
+  .ubi h3 {
+    font-size: 1.5em; }
+  .espe {
+    flex-direction: column;
+    align-items: center; }
+  .proyecto {
+    flex-direction: column;
+    align-items: center; }
+  /*---PROYECTOS/INTERIORES---*/
+  .proyecto__h1 {
+    grid-area: titulo;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1rem; }
+  .edificios {
+    padding: 1rem; }
+  .vivienda {
+    padding: 1rem; }
+  .interiores__estar {
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem; }
+    .interiores__estar h2 {
+      font-size: 2em; }
+    .interiores__estar h3 {
+      font-size: 1.5em; }
+    .interiores__estar p {
+      font-size: 1.5em;
+      text-justify: auto;
+      padding: 1rem; }
+  /*----REFERENTES----*/
+  .lina__texto {
+    font-size: none;
+    text-align: left;
+    padding: 2rem; }
+    .lina__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .lina__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .lina__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .norman__texto {
+    font-size: none;
+    text-align: left;
+    padding: 2rem; }
+    .norman__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .norman__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .norman__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .frank__texto {
+    font-size: none;
+    text-align: left;
+    padding: 2rem; }
+    .frank__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .frank__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .frank__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .lyv__texto {
+    font-size: none;
+    text-align: left;
+    padding: 2rem; }
+    .lyv__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .lyv__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .lyv__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .img-fluid {
+    padding: 0.5rem; }
+  .norman {
+    flex-direction: column; } }
+
+/* --- tablet --- */
+@media only screen and (min-width: 780px) and (max-width: 992px) {
+  /*--menu de navegacion--*/
+  .navbar-nav {
+    padding: 0;
+    gap: 0; }
+  /*--TITULOS--*/
+  .contenido__titulo {
+    text-align: center; }
+  .espe__titulo {
+    text-align: center; }
+  .ubicacion__titulo {
+    text-align: center; }
+  .footer h3 {
+    text-align: center; }
+  /*--NOSOTROS--*/
+  .contenido {
+    text-align: center;
+    flex-direction: column; }
+    .contenido img {
+      width: 40rem;
+      height: 25rem;
+      padding: 1rem; }
+    .contenido__texto {
+      align-items: center;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 1rem; }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 25rem;
+    border: solid 1px;
+    padding: 0.5rem; }
+  /*---UBICACION---*/
+  iframe {
+    width: 40rem;
+    height: 25rem;
+    padding: 1rem; }
+  .ubi h3 {
+    font-size: 1.5em; }
+  .espe {
+    flex-direction: column;
+    align-items: center; }
+  .proyecto {
+    flex-direction: column;
+    align-items: center; }
+  /*---PROYECTOS/INTERIORES---*/
+  .proyecto__h1 {
+    grid-area: titulo;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1rem; }
+  .edificios {
+    padding: 1rem; }
+  .vivienda {
+    padding: 1rem; }
+  .interiores__estar {
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem; }
+    .interiores__estar h2 {
+      font-size: 2em; }
+    .interiores__estar h3 {
+      font-size: 1.5em; }
+    .interiores__estar p {
+      font-size: 1.5em;
+      text-justify: auto;
+      padding: 1rem; }
+  /*----REFERENTES----*/
+  .lina__texto {
+    font-size: none;
+    text-align: left;
+    padding: none; }
+    .lina__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .lina__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .lina__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .norman__texto {
+    font-size: none;
+    text-align: left;
+    padding: none; }
+    .norman__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .norman__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .norman__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .frank__texto {
+    font-size: none;
+    text-align: left;
+    padding: none; }
+    .frank__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .frank__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .frank__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .lyv__texto {
+    font-size: none;
+    text-align: left;
+    padding: none; }
+    .lyv__texto h1 {
+      font-size: 2em;
+      text-align: center;
+      padding: none; }
+    .lyv__texto h2 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+    .lyv__texto p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: none; }
+  .img-fluid {
+    padding: 1rem; } }

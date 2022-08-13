@@ -111,7 +111,7 @@ ul {
       border: solid 1px;
       padding: 0.5rem; }
     .espe .box img:hover {
-      transform: scale(1.5);
+      transform: scale(1.15);
       transition: 1s ease; }
   .espe__titulo {
     font-size: 3.2em;
@@ -141,12 +141,37 @@ ul {
 .footer {
   padding: 0.5rem; }
   .footer__c {
-    display: flex;
     padding: 2rem;
     font-size: 2em;
     text-decoration: none;
     padding: 1rem;
-    flex-direction: column; }
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    display: inline; }
+  .footer__img {
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0; }
+  .footer .fa-facebook::before {
+    font-size: 30px;
+    padding: 2rem;
+    text-decoration: none; }
+  .footer .fa-instagram-square::before {
+    font-size: 30px;
+    padding: 2rem; }
+  .footer .fa-whatsapp-square::before {
+    font-size: 30px;
+    padding: 2rem; }
+  .footer .fa-envelope::before {
+    font-size: 30px;
+    padding: 2rem; }
+  .footer .fa-linkedin::before {
+    font-size: 30px;
+    padding: 2rem; }
   .footer h3 {
     font-size: 3.2em;
     padding: 2rem;
@@ -154,6 +179,25 @@ ul {
   .footer p {
     font-size: 1.2rem;
     text-align: right; }
+  .footer__nav {
+    padding: 5rem;
+    gap: 10rem;
+    font-size: 1.5em;
+    text-align: right;
+    text-decoration: none;
+    list-style-type: none; }
+
+.footer h4 {
+  font-size: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.footer h5 {
+  font-size: 1.5em;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem; }
 
 /* ----- PROYECTOS ------ */
 .proyecto__h1 {
@@ -285,7 +329,16 @@ ul {
 
 /* ------ FORMULARIO ------ */
 .contactos {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  padding: 2rem; }
+
+.btn {
+  font-size: 1.5rem;
+  border: solid 1px; }
+
+.form {
+  font-size: 1em;
+  border: solid 1px; }
 
 /* ------ RESPONSIVE ------ */
 /* --- mobile --- */

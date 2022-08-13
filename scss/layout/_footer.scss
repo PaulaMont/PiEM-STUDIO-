@@ -5,12 +5,51 @@
     padding: 0.5rem;
 
     &__c {
-        display: flex;
         padding: 2rem;
         font-size: $font_size-2;
         text-decoration: none;
         padding: 1rem;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        gap: 10rem;
+        display: inline;
+     
+      
+    }
+
+   
+    &__img{
+        padding: 2rem;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+
+    }
+
+
+   
+    .fa-facebook::before{
+        font-size: 30px;
+        padding: 2rem;
+        text-decoration: none;
+    }
+    .fa-instagram-square::before{
+        font-size: 30px;
+        padding: 2rem;
+    }
+    .fa-whatsapp-square::before{
+        font-size: 30px;
+        padding: 2rem;
+    }
+    .fa-envelope::before{
+        font-size: 30px;
+        padding: 2rem;
+    }
+    .fa-linkedin::before{
+       font-size: 30px;
+       padding: 2rem;
     }
 
     & h3 {
@@ -23,4 +62,33 @@
         font-size: 1.2rem;
         text-align: right;
     }
+    
+
+    &__nav{
+        padding: 5rem;
+        gap: 10rem;
+        font-size: 1.5em;
+        text-align:right;
+        text-decoration: none;
+        list-style-type: none;
+      
+    }
+
+    
 }
+.footer h4{
+    font-size: $font_size-3;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+ 
+}
+
+.footer h5{
+    font-size: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+}
+ 
+
